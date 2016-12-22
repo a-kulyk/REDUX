@@ -1,0 +1,28 @@
+{
+  "extends": "@eleks/eleks",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "babel",
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals" : {
+    "VERSION": false
+  },
+  "rules": {
+    "one-var": 0,
+    "curly": [2, "multi-line"],
+    "no-magic-numbers": [2, {"ignoreArrayIndexes": true, "ignore": [-1, 0, 1] }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": "error"
+  }
+}
